@@ -1,0 +1,571 @@
+/* [Master Stylesheet - v1.0] */
+/* =========== Index of CSS ===========
+:: 1.0 Import Fonts
+:: 2.0 Import All CSS
+:: 3.0 Base CSS
+    :: 3.1.0 Spacing
+    :: 3.2.0 Height
+    :: 3.3.0 Section Padding
+    :: 3.4.0 Section Heading
+    :: 3.5.0 Preloader CSS
+    :: 3.6.0 Miscellaneous
+    :: 3.7.0 ScrollUp
+    :: 3.8.0 Palatin Button
+:: 4.0 Header Area CSS
+:: 5.0 Hero Area CSS
+:: 6.0 Book Now Area CSS
+:: 7.0 About Us Area CSS
+:: 8.0 Pool Area CSS
+:: 9.0 Rooms Area CSS
+:: 10.0 Services Area CSS
+:: 11.0 Our Hotel Area CSS
+:: 12.0 Testimonial Area CSS
+:: 13.0 Footer Area CSS
+:: 14.0 Breadcumb Area CSS
+:: 15.0 Blog Area CSS
+:: 16.0 Contact Area CSS
+:: 17.0 Skills Area CSS
+:: 18.0 Elements Area CSS
+    :: 18.1.0 Single Cool Facts CSS
+    :: 18.2.0 Accordians Area CSS
+    :: 18.3.0 Tabs Area CSS
+*/
+/* :: 1.0 Import Fonts */
+@import url(css/bootstrap.min.css);
+@import url(css/classy-nav.css);
+@import url(css/owl.carousel.min.css);
+@import url(css/animate.css);
+@import url(css/magnific-popup.css);
+@import url(css/font-awesome.min.css);
+@import url(css/nice-select.css);
+@import url(css/travel-icon.css);
+@font-face {
+  font-family: 'FuturaLT-Book';
+  src: url("fonts/FuturaLT-Book.eot?#iefix") format("embedded-opentype"), url("fonts/FuturaLT-Book.woff") format("woff"), url("fonts/FuturaLT-Book.ttf") format("truetype"), url("fonts/FuturaLT-Book.svg#FuturaLT-Book") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* :: 2.0 Import All CSS */
+/* :: 3.0 Base CSS */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "FuturaLT-Book";
+  font-size: 14px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #363636;
+  line-height: 1.3;
+  font-weight: 400; }
+
+p {
+  color: #7d7d7d;
+  font-size: 14px;
+  line-height: 2.1;
+  font-weight: 400; }
+
+a,
+a:hover,
+a:focus {
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  text-decoration: none;
+  outline: 0 solid transparent;
+  color: #141414;
+  font-weight: 400;
+  font-size: 14px; }
+
+ul,
+ol {
+  margin: 0; }
+  ul li,
+  ol li {
+    list-style: none; }
+
+img {
+  height: auto;
+  max-width: 100%; }
+
+/* :: 3.6.0 Miscellaneous */
+.bg-img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.bg-white {
+  background-color: #ffffff !important; }
+
+.bg-dark {
+  background-color: #000000 !important; }
+
+.bg-transparent {
+  background-color: transparent !important; }
+
+.font-bold {
+  font-weight: 700; }
+
+.font-light {
+  font-weight: 300; }
+
+.bg-overlay {
+  position: relative;
+  z-index: 2;
+  background-position: center center;
+  background-size: cover; }
+  .bg-overlay::after {
+    background-color: rgba(0, 0, 0, 0.63);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: ""; }
+
+.bg-fixed {
+  background-attachment: fixed !important; }
+
+/* :: 3.7.0 ScrollUp */
+#scrollUp {
+  background-color: #ff4003;
+  border-radius: 0;
+  bottom: 50px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font-size: 24px;
+  height: 40px;
+  line-height: 40px;
+  right: 50px;
+  text-align: center;
+  width: 40px;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms; }
+  #scrollUp:hover, #scrollUp:focus {
+    background-color: #363636; }
+
+/* :: 3.8.0 Palatin Button */
+.palatin-btn {
+  background-color: #cb8670;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  min-width: 123px;
+  height: 53px;
+  color: #ffffff;
+  border: none;
+  border-radius: 0;
+  padding: 0 30px;
+  font-size: 16px;
+  line-height: 53px;
+  text-transform: capitalize; }
+  .palatin-btn:hover, .palatin-btn:focus {
+    font-size: 16px;
+    background-color: #363636;
+    color: #ffffff; }
+  .palatin-btn.btn-2 {
+    background-color: #363636;
+    color: #ffffff; }
+    .palatin-btn.btn-2:hover, .palatin-btn.btn-2:focus {
+      font-size: 16px;
+      background-color: #cb8670;
+      color: #ffffff; }
+  .palatin-btn.btn-3 {
+    background-color: #ffffff;
+    color: #cb8670;
+    border: 2px solid #cb8670;
+    height: 49px;
+    line-height: 48px; }
+    .palatin-btn.btn-3:hover, .palatin-btn.btn-3:focus {
+      font-size: 16px;
+      background-color: #cb8670;
+      color: #ffffff; }
+
+/* :: 4.0 Header Area CSS */
+.header-area {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; }
+  .header-area .palatin-main-menu {
+    position: relative;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.63);
+    border-bottom: 2px solid rgba(203, 134, 112, 0.63); }
+    .header-area .palatin-main-menu .classy-nav-container {
+      background-color: transparent; }
+    .header-area .palatin-main-menu .classy-navbar {
+      -webkit-transition-duration: 300ms;
+      transition-duration: 300ms;
+      background-color: transparent;
+      height: 150px;
+      padding: 0; }
+      @media only screen and (max-width: 767px) {
+        .header-area .palatin-main-menu .classy-navbar {
+          height: 70px; } }
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .header-area .palatin-main-menu .classy-navbar .nav-brand {
+          max-width: 140px; } }
+      @media only screen and (max-width: 767px) {
+        .header-area .palatin-main-menu .classy-navbar .nav-brand {
+          max-width: 140px; } }
+      .header-area .palatin-main-menu .classy-navbar .classynav ul li a {
+        text-transform: capitalize;
+        color: #ffffff;
+        font-size: 16px;
+        background-color: transparent; }
+        .header-area .palatin-main-menu .classy-navbar .classynav ul li a:hover, .header-area .palatin-main-menu .classy-navbar .classynav ul li a:focus {
+          color: #ffffff;
+          background-color: #cb8670; }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+          .header-area .palatin-main-menu .classy-navbar .classynav ul li a {
+            font-size: 14px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .header-area .palatin-main-menu .classy-navbar .classynav ul li a {
+            background-color: #cb8670; } }
+        @media only screen and (max-width: 767px) {
+          .header-area .palatin-main-menu .classy-navbar .classynav ul li a {
+            background-color: #cb8670; } }
+      .header-area .palatin-main-menu .classy-navbar .classynav ul li.active a {
+        color: #ffffff;
+        background-color: #cb8670; }
+      .header-area .palatin-main-menu .classy-navbar .classynav ul li.megamenu-item > a::after,
+      .header-area .palatin-main-menu .classy-navbar .classynav ul li.has-down > a::after {
+        color: #ffffff; }
+      .header-area .palatin-main-menu .classy-navbar .classynav ul li ul li a {
+        color: #363636; }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+          .header-area .palatin-main-menu .classy-navbar .classynav ul li ul li a {
+            padding: 0 20px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .header-area .palatin-main-menu .classy-navbar .classynav ul li ul li a {
+            color: #ffffff; } }
+        @media only screen and (max-width: 767px) {
+          .header-area .palatin-main-menu .classy-navbar .classynav ul li ul li a {
+            color: #ffffff; } }
+      .header-area .palatin-main-menu .classy-navbar .menu-btn {
+        margin-left: 100px; }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+          .header-area .palatin-main-menu .classy-navbar .menu-btn {
+            margin-left: 30px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .header-area .palatin-main-menu .classy-navbar .menu-btn {
+            margin-left: 30px;
+            border: 2px solid #ffffff;
+            margin-top: 30px;
+            display: inline-block; } }
+        @media only screen and (max-width: 767px) {
+          .header-area .palatin-main-menu .classy-navbar .menu-btn {
+            margin-left: 30px;
+            border: 2px solid #ffffff;
+            margin-top: 30px;
+            display: inline-block; } }
+        .header-area .palatin-main-menu .classy-navbar .menu-btn a {
+          color: #ffffff;
+          font-size: 16px; }
+  .header-area .is-sticky .palatin-main-menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #000;
+    box-shadow: 0 5px 50px 15px rgba(0, 0, 0, 0.2); }
+    .header-area .is-sticky .palatin-main-menu .classy-navbar {
+      height: 90px; }
+      @media only screen and (max-width: 767px) {
+        .header-area .is-sticky .palatin-main-menu .classy-navbar {
+          height: 70px; } }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .breakpoint-on .classy-navbar .classy-menu {
+    background-color: #cb8670; } }
+@media only screen and (max-width: 767px) {
+  .breakpoint-on .classy-navbar .classy-menu {
+    background-color: #cb8670; } }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .classynav ul li .megamenu .single-mega.cn-col-4 {
+    padding: 0; } }
+@media only screen and (max-width: 767px) {
+  .classynav ul li .megamenu .single-mega.cn-col-4 {
+    padding: 0; } }
+
+.classycloseIcon .cross-wrap span {
+  background: #ffffff; }
+
+/* :: 5.0 Hero Area CSS */
+.hero-slides {
+  position: relative;
+  z-index: 1; }
+  .hero-slides .owl-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    left: 4%; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .hero-slides .owl-dots {
+        left: 1%; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .hero-slides .owl-dots {
+        left: 5px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
+    @media only screen and (max-width: 767px) {
+      .hero-slides .owl-dots {
+        bottom: 100px; } }
+    .hero-slides .owl-dots .owl-dot {
+      -webkit-transition-duration: 300ms;
+      transition-duration: 300ms;
+      border: 2px solid transparent;
+      background-color: transparent;
+      display: block;
+      padding: 3px 5px;
+      color: #ffffff;
+      font-size: 14px; }
+      .hero-slides .owl-dots .owl-dot.active, .hero-slides .owl-dots .owl-dot:hover, .hero-slides .owl-dots .owl-dot:focus {
+        color: #ffffff;
+        background-color: #1b3f4c;
+        border: 2px solid #cb8670;
+        box-shadow: none; }
+
+.single-hero-slide {
+  width: 100%;
+  height: 950px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden; }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .single-hero-slide {
+      height: 800px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single-hero-slide {
+      height: 750px; } }
+  @media only screen and (max-width: 767px) {
+    .single-hero-slide {
+      height: 750px; } }
+  .single-hero-slide .slide-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
+  .single-hero-slide .hero-slides-content {
+    display: inline-block;
+    padding: 60px 50px;
+    background-color: rgba(0, 0, 0, 0.63);
+    border: 2px solid #cb8670;
+    text-align: center; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .single-hero-slide .hero-slides-content {
+        padding: 40px 20px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .single-hero-slide .hero-slides-content {
+        padding: 30px 20px; } }
+    @media only screen and (max-width: 767px) {
+      .single-hero-slide .hero-slides-content {
+        padding: 20px; } }
+    .single-hero-slide .hero-slides-content .line {
+      width: 90px;
+      height: 2px;
+      background-color: #cb8670;
+      margin: 0 auto 30px; }
+    .single-hero-slide .hero-slides-content h2 {
+      position: relative;
+      z-index: 1;
+      font-size: 72px;
+      color: #ffffff;
+      margin-bottom: 0;
+      display: inline-block; }
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .single-hero-slide .hero-slides-content h2 {
+          font-size: 48px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .single-hero-slide .hero-slides-content h2 {
+          font-size: 36px; } }
+      @media only screen and (max-width: 767px) {
+        .single-hero-slide .hero-slides-content h2 {
+          font-size: 30px; } }
+    .single-hero-slide .hero-slides-content p {
+      font-size: 14px;
+      color: #ffffff; }
+
+.hero-slides .owl-item.active .single-hero-slide .slide-img {
+  -webkit-animation: slide 20s linear infinite;
+  animation: slide 20s linear infinite; }
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+@keyframes slide {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+/* :: 6.0 Book Now Area CSS */
+.book-now-area {
+  position: relative;
+  z-index: 100;
+  margin-bottom: 15px; }
+
+.book-now-form {
+  position: relative;
+  z-index: 1;
+  top: -87px; }
+  .book-now-form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%; }
+    .book-now-form form .form-group,
+    .book-now-form form button {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -ms-grid-row-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+      flex: 0 0 20%;
+      max-width: 20%;
+      width: 20%;
+      height: 174px;
+      background-color: #363636;
+      border-left: 2px solid #cb8670;
+      border-top: 2px solid #cb8670;
+      border-bottom: 2px solid #cb8670;
+      margin-bottom: 0;
+      padding: 0 30px; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .book-now-form form .form-group,
+        .book-now-form form button {
+          padding: 0 20px; } }
+      @media only screen and (max-width: 767px) {
+        .book-now-form form .form-group,
+        .book-now-form form button {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+          width: 100%;
+          height: 100px;
+          border-bottom: 0 solid transparent;
+          border-right: 2px solid #cb8670; } }
+    .book-now-form form .form-group label {
+      color: #cb8670;
+      display: block;
+      font-size: 14px;
+      width: 100%; }
+    .book-now-form form button {
+      border-right: 2px solid #cb8670;
+      font-size: 16px;
+      background-color: #cb8670;
+      text-transform: uppercase;
+      color: #ffffff;
+      cursor: pointer;
+      -webkit-transition-duration: 300ms;
+      transition-duration: 300ms;
+      padding: 0; }
+      .book-now-form form button:hover, .book-now-form form button:focus {
+        outline: none;
+        background-color: #363636; }
+    .book-now-form form .form-control:focus {
+      box-shadow: none; }
+  .book-now-form .nice-select {
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    font-size: 14px;
+    height: auto;
+    line-height: 1;
+    padding-left: 0;
+    padding-right: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+    color: #ffffff; }
+    .book-now-form .nice-select::after {
+      border-bottom: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      height: 10px;
+      margin-top: -4px;
+      width: 10px; }
+    .book-now-form .nice-select .list {
+      background-color: #ffffff;
+      border-radius: 0;
+      margin-top: 2px;
+      box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
+      width: 100%; }
+    .book-now-form .nice-select .current {
+      font-size: 24px;
+      line-height: 1; }
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .book-now-form .nice-select .current {
+          font-size: 18px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .book-now-form .nice-select .current {
+          font-size: 14px; } }
+      @media only screen and (max-width: 767px) {
+        .book-now-form .nice-select .current {
+          font-size: 18px; } }
+    .book-now-form .nice-select .option {
+      font-size: 20px;
+      color: #363636;
+      width: 100%; }
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .book-now-form .nice-select .option {
+          font-size: 16px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .book-now-form .nice-select .option {
+          font-size: 13px; } }
+      @media only screen and (max-width: 767px) {
+        .book-now-form .nice-select .option {
+          font-size: 16px; } }
+
+
+/* ====== The End ====== */
+
+/*# sourceMappingURL=style.css.map */
